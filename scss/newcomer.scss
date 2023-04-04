@@ -1,0 +1,51 @@
+.newcomer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15rem;
+    @include breakpoint($lap){
+        margin-bottom: 10rem;
+    }
+    @include breakpoint($mobile){
+        margin-bottom: 5rem;
+    }
+
+}
+.newcomer__link{
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.newcomer__right{
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint($laptop){
+        width: 100%;
+    }
+}
+.newcomer__left{
+    @include breakpoint($laptop){
+        width: 100%;
+    }
+}
+.newcomer__name{
+    @include breakpoint($laptop){
+        text-align: center;
+    }
+}
+.newcomer__title{
+    @include breakpoint($laptop){
+        max-width: none;
+    }
+}
+.newcomer__subtitle{
+    @include breakpoint($laptop){
+        margin: 0 auto 5.5rem;
+    }
+}
+.newcomer__more{
+    @include breakpoint($laptop){
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+}

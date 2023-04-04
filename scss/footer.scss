@@ -1,0 +1,108 @@
+.footer{
+    padding: 7rem 0 10rem 0;
+    border-top: 0.5px solid rgba($white, 0.15);
+    @include breakpoint($lap){
+        padding-bottom: 4rem;
+    }
+    @include breakpoint($mobile){
+        padding-bottom: 2rem;
+    }
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    @include breakpoint($lap){
+        flex-direction: row-reverse;
+    }
+    @include breakpoint($mobile){
+        flex-direction: column-reverse;
+    }
+}
+.footer__item{
+    padding: 0 15px;
+    &-mr{
+        margin-right: 12rem;
+        @include breakpoint($lap){
+            margin-right: 0;
+        }
+    }
+    &.pr{
+        padding-right: 8rem;
+        @include breakpoint($laptop){
+            padding-right: 0;
+        }
+        @include breakpoint($mobile){
+            padding-right: 15px;
+        }
+    }
+    @include breakpoint($lap){
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+    @include breakpoint($mobile){
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+}
+.item__container{
+    @include breakpoint($lap){
+        max-width: 29rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer__logo{
+    margin-bottom: 2.7rem;
+    z-index: 0;
+    @include breakpoint($mobile){
+        margin-bottom: 1rem;
+        justify-content: center;
+        margin-right: 10px;
+    }
+}
+.footer__copyright{
+    margin-bottom: 2.1rem;
+    font-size: 1.6rem;
+    color: rgba($white, 0.9);
+    font-weight: 500;
+}
+.footer__describtion{
+    font-size: 1.4rem;
+    color: rgba($white, 0.55);
+    line-height: 1.5;
+    max-width: 26rem;
+    @include breakpoint($mobile){
+        max-width: none;
+    }
+}
+
+.footer__title{
+    color: rgba($white, 0.9);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.footer__list-item{
+    margin-bottom: 1rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.footer__link{
+    color: rgba($white, 0.55);
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: color 0.2s linear;
+    &:hover{
+        color: $white;
+    }
+}
+.footer__right{
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

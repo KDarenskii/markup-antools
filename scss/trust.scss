@@ -1,0 +1,38 @@
+.trust{
+    background-color: rgba(#2C352D, 0.2);
+    border: 2px solid rgba($white, 0.1);
+    border-radius: 25px;
+    padding: 5.6rem 8.2rem;
+    text-align: center;
+    margin-bottom: 22rem;
+    @include breakpoint($lap){
+        padding-bottom: 0;
+        padding-top: 3.4rem;
+        margin-bottom: 10rem;
+    }
+    @include breakpoint($bmobile){
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        margin-bottom: 10rem;
+    }
+}
+.trust__title{
+    color: rgba($white, 0.8);
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 5.6rem;
+}
+.trust__companies{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trust__logo{
+    @include breakpoint($lap){
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+    @include breakpoint($bmobile){
+        width: 100%;
+    }
+}

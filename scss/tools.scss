@@ -1,0 +1,148 @@
+.tools{
+    margin-bottom: 20rem;
+    @include breakpoint($lap){
+        margin-bottom: 10rem;
+    }
+}
+.tools__name{
+    text-align: center;
+}
+.tools__title{
+    color: rgba($white, 0.9);
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    @include breakpoint($lap){
+        font-size: 4.4rem;
+    }
+}
+.tools__subtitle{
+    color: rgba($white, 0.55);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 42.8rem;
+    margin: 0 auto;
+    margin-bottom: 9rem;
+    @include breakpoint($lap){
+        margin-bottom: 4rem;
+    }
+}
+.tools__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.2rem;
+}
+.tools__item{
+    width: 33.33333%;
+    padding: 0 12px;
+    padding-bottom: 10rem;
+    &-small{
+        width: 50%;
+        padding-bottom: 5rem;
+    }
+    @include breakpoint($laptop){
+        width: 50%;
+        padding-bottom: 5rem;
+    }
+    @include breakpoint($bmobile){
+        width: 100%;
+    }
+}
+.tools__content{
+    padding: 3.6rem 3rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: transform 0.3s linear, background-color 0.2s linear;
+    &:hover{
+        & .btn{
+            background-color: $orange;
+        }
+        background-color: rgba(#283036, 0.6);
+        border-color: #06253d;
+        transform: translateY(-20px);
+    }
+    @include breakpoint($laptop){
+        max-width: 391px;
+        margin: 0 auto;
+    }
+    &-small{
+        padding: 2.8rem 2.2rem;
+        @include breakpoint($mobile){
+            padding: 2.8rem 1rem;
+        }
+    }
+}
+.tools__header{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.tools__info{
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+.tools__firm{
+    color: rgba($white, 0.78);
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-weight: 500;
+    &-small{
+        @include breakpoint($bmobile){
+            font-size: 2.1rem;
+        }
+    }
+}
+.tools__cost{
+    color: $orange;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+.tools__text{
+    color: rgba($white, 0.55);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 3.5rem;
+}
+.tools__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tools__btn{
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 23px;
+    color: rgba($white, 0.38);
+    cursor: pointer;
+    margin-right: 1.2rem;
+    &:last-child{
+        margin-right: 0;
+    }
+    &-like, &-download{
+        padding: 0.8rem 1.2rem;
+        border-radius: 8px;
+        transition: color 0.2s linear, background-color 0.2s linear;
+    }
+    &-download:hover{
+        color: #000;
+        background-color: rgba($white, 0.70);
+    }
+    &-like:hover{
+        color: #FD3B41;
+        background-color: #283036;
+        box-shadow: 0 5px 10px -3px rgba(#121212, 0.15);
+    }
+}
+
+.tools__visit:hover{
+    background-color: red;
+}
+.tools__more{
+    text-align: center;
+}
+.tools__link{
+    font-weight: 500;
+    font-size: 2rem;
+}

@@ -1,0 +1,143 @@
+.reviews{
+    padding-bottom: 10rem;
+    position: relative;
+    margin-bottom: 25rem;
+    z-index: 0;
+    @include breakpoint($bmobile){
+        margin-bottom: 15rem;
+    }
+    @include breakpoint($bmobile){
+        margin-bottom: 10rem;
+    }
+}
+
+.reviews__inner{
+    display: flex;
+    min-height: 0;
+    flex-wrap: wrap;
+}
+.reviews__item{
+    width: 50%;
+    @include breakpoint($lap){
+        width: 100%;
+    }
+}
+.reviews__photo{
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width: 43px;
+        height: 43px;
+        background: url(../images/Ellipse.svg) center no-repeat;
+        position: absolute;
+        top: 30%;
+        left: 23%;
+        z-index: -1;
+        filter: blur(26px);
+        @include breakpoint($lap){
+            left: 28%;
+        }
+        @include breakpoint($bmobile){
+            left: 18%;
+        }
+        @include breakpoint($mobile){
+            left: 23%;
+        }
+        @media (max-width: 375px){
+            left: 9%;
+        }
+    }
+    &::before{
+        content: "";
+        display: block;
+        width: 380px;
+        height: 380px;
+        background: url(../images/circle.svg) center no-repeat;
+        position: absolute;
+        bottom: 25px;
+        left: calc(50% - 15px);
+        transform: translateX(-50%);
+        z-index: -1;
+        @include breakpoint($mobile){
+            background-size: 257px;
+            bottom: -30px;
+        }
+    }
+}
+.reviews__img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    @include breakpoint($mobile){
+        width: 295px;
+    }
+}
+.reviews__info{
+    width: 100%;
+    max-width: 26.5rem;
+    background-color: #283036;
+    border-radius: 8px;
+    border: 1px solid rgba($white, 0.05);
+    padding: 1rem 2.3rem 1.6rem;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-20%);
+    z-index: 2;
+    @include breakpoint($mobile){
+        padding: 1rem 1.4rem 1.2rem;
+        max-width: 17.4rem;
+    }
+}
+.reviews__author{
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: rgba(#FFFDFD, 0.78);
+    @include breakpoint($mobile){
+        font-size: 1.7rem;
+    }
+}
+.reviews__prof{
+    font-size: 1.6rem;
+    color: rgba(#FFFDFD, 0.55);
+    @include breakpoint($mobile){
+        font-size: 1.4rem;
+    }
+}
+.reviews__comment{
+    margin-top: 11rem;
+    max-width: 39.4rem;
+    line-height: 2.1;
+    position: relative;
+    @include breakpoint($lap){
+        max-width: 80%;
+        margin: 7rem auto 0;
+    }
+    @include breakpoint($bmobile){
+        max-width: 89%;
+    }
+}
+.reviews__text{
+    color: rgba($white, 0.78);
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.015em;
+    @include breakpoint($lap){
+        font-size: 2.1rem;
+    }
+    @include breakpoint($mobile){
+        font-size: 1.9rem;
+    }
+}
+.reviews__dotes{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    @include breakpoint($bmobile){
+       left: -40px;
+    }
+    @include breakpoint($mobile){
+        left: -20px;
+    }
+}

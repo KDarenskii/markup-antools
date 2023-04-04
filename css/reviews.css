@@ -1,0 +1,7 @@
+.reviews {
+  height: 1500px;
+}
+
+.reviews__item {
+  width: 50%;
+}

@@ -1,0 +1,48 @@
+.intro__block{
+    background: url(../images/Illustration.svg) bottom right no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+    @include breakpoint($laptop){
+        background-size: 500px;
+    }
+    @include breakpoint($lap){
+        background: none;
+    }
+}
+.intro{
+    position: relative;
+    min-height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20rem;
+    @include breakpoint($lap){
+        margin-bottom: 8rem;
+    }
+}
+.social__list{
+    position: absolute;
+    left: 0;
+    bottom: 11px;
+    display: flex;
+    align-items: center;
+    @include breakpoint($mobile){
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.social__item{
+    margin-right: 4.5rem;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.intro__btn{
+    @include breakpoint($mobile){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -70px;
+    }
+}

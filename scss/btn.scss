@@ -1,0 +1,37 @@
+.btn{
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0;
+    color: #FDF5FF;
+    background-color: $orange;
+    padding: 1.35rem 3.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    &:hover{
+        background-color: darken($orange, 10);
+    }
+    &-wide{
+        padding: 1.35rem 4rem;
+    }
+    &-small{
+        padding: 1.1rem 3.75rem;
+    }
+    &-no-color{
+        background-color: transparent;
+    }
+    &-dark{
+        background-color: #1E252B;
+        border: 1px solid rgba($white, 0.1);
+        color: $orange;
+        &:hover{
+            background-color: lighten(#1E252B, 5);
+        }
+    }
+    &-big{
+        padding: 1.6rem 3.75rem;
+    }
+}

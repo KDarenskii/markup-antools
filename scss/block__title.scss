@@ -1,0 +1,39 @@
+.block__name-center{
+    max-width: 58rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.newcomer__left, .newcomer__right{
+    width: 50%;
+}
+.block__title{
+    max-width: 58rem;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 1.4;
+    color: rgba($white, 0.9);
+    margin-bottom: 2.5rem;
+    & span{
+        color: $orange;
+    }
+    &-small{
+        font-size: 4.8rem;
+    }
+    @include breakpoint($bmobile){
+        font-size: 4.5rem;
+    }
+    @include breakpoint($mobile){
+        font-size: 3.7rem;
+    }
+
+}
+.block__subtitle{
+    margin-bottom: 5.5rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: rgba($white, 0.55);
+    max-width: 48rem;
+    @include breakpoint($bmobile){
+        font-size: 1.4rem;
+    }
+}
